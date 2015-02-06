@@ -6,10 +6,10 @@ Hello, CiO People!
 Today I would examine the fresh CheckiO mission ["Pangram"](http://www.checkio.org/mission/pangram/share/6d2c66db9c7d72144d48c01ae323e868/).
 This mission was based on an idea by [Sim0000](http://www.checkio.org/user/Sim0000/),
 which had added to a recent forum [post](http://www.checkio.org/forum/post/2977/mission-ideas/#comment-23718).
-You can propose you own ideas there too and we will try to make them happen.
+You can propose youк own ideas there too and we will try to make them happen.
 
 [Pangram](https://en.wikipedia.org/wiki/Pangram) is a sentence which uses every letter of the alphabet at least once.
-In this mission you need check text and verify if it is a pangram for the English alphabet or not.
+In this mission you need to check text and verify if it is a pangram for the English alphabet or not.
 
 There are many methods which can be employed to solve this problem. 
 As we can see, it easily to write a solution with a time complexity of O(N), 
@@ -18,7 +18,7 @@ However, we will not stop at this and will looking for more interesting solution
 
 ## Clear
 
-The first solution we'll look at is titled ["First"](http://www.checkio.org/mission/pangram/publications/dagger126/python-3/first/share/2a462ede1eda10f6c3077357ec642a92/)
+The first solution we'll look at titled ["First"](http://www.checkio.org/mission/pangram/publications/dagger126/python-3/first/share/2a462ede1eda10f6c3077357ec642a92/)
 and was created by [dagger126](http://www.checkio.org/user/dagger126/) with a simple and obvious solution. 
 Good usage of built-in set data type.
  
@@ -31,7 +31,7 @@ Good usage of built-in set data type.
 
 Here's an alternate method by [DmitriyS](http://www.checkio.org/user/DmitriyS/) titled 
 ["all() + string.ascii_lowercase"](http://www.checkio.org/mission/pangram/publications/DmitriyS/python-27/first/share/23bc0848d1244cf8fc056d46cf3a7a84/)
-As we can see from a title this is a usage of the "all" function with comprehension. 
+As we can see from the title this is a usage of the "all" function with comprehension. 
 Iterate all letters from the alphabet and check they are in the given text.
 
 ```
@@ -59,7 +59,7 @@ check_pangram=lambda t:set(map(chr,range(65,91)))<=set(t.upper())
 ```
 
 ["Not Very Clean but works"](http://www.checkio.org/mission/pangram/publications/schanjr/python-27/not-very-clean-but-works/share/de57ea9d78879a7358b8dc5ef516402a/)
-by [schanjr](http://www.checkio.org/user/schanjr/) is "the most complicated solution of the task" as community member
+by [schanjr](http://www.checkio.org/user/schanjr/) is "the most complicated solution of the task" as the community member
 [veky](http://www.checkio.org/user/veky/) put it. 
 But this solution has made it in the "Creative" category, 
 so I'm sure schanjr made something special. 
@@ -74,7 +74,7 @@ if all(x is x>=2 for x in count.itervalues()):
 [This comment](http://www.checkio.org/mission/pangram/publications/schanjr/python-27/not-very-clean-but-works/share/de57ea9d78879a7358b8dc5ef516402a/#comment-24174)
 about usage if-else for return can be useful for newbies. Veky explains best practice.
 
-But if we would make award for "the most complicated solution of the task", then I would add 
+But if we would make an award for "the most complicated solution of the task", then I would add 
 ["First | Naive"](http://www.checkio.org/mission/pangram/publications/bundgaard/python-3/first-naive/share/6b77e9e39c53e380163d0d101e1d1d47/)
 by [bundgaard](http://www.checkio.org/user/bundgaard/).
 
@@ -82,6 +82,6 @@ by [bundgaard](http://www.checkio.org/user/bundgaard/).
 
 We often meet solutions which are written with Python but are not "in" Python - 
 they use a LISP or Java style for example. 
-When I first started to learn Python I wrote C-code with python syntax and it was funny for python gurus to read.
+When I first started to learn Python I wrote C-code with Python syntax and it was funny for Python gurus to read.
 
 So how about trying to write a "Pangram" solution with Python, but not in Python? Could you do it?
