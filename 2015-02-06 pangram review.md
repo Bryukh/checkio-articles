@@ -18,7 +18,7 @@ However, we will not stop at this and will looking for more interesting solution
 
 ## Clear
 
-The first solution we'll look at titled ["First"](http://www.checkio.org/mission/pangram/publications/dagger126/python-3/first/share/2a462ede1eda10f6c3077357ec642a92/)
+The first solution we'll look at is titled ["First"](http://www.checkio.org/mission/pangram/publications/dagger126/python-3/first/share/2a462ede1eda10f6c3077357ec642a92/)
 and was created by [dagger126](http://www.checkio.org/user/dagger126/) with a simple and obvious solution. 
 Good usage of built-in set data type.
  
