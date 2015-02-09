@@ -60,7 +60,7 @@ check_pangram=lambda t:set(map(chr,range(65,91)))<=set(t.upper())
 
 ["Not Very Clean but works"][schanjr_not_clean]
 by [schanjr][schanjr_profile] is "the most complicated solution of the task" as the community member
-[veky][veky_profile](http://www.checkio.org/user/veky/) puts it.
+[veky][veky_profile] puts it.
 But this solution has made it in the "Creative" category, 
 so I'm sure schanjr made something special. 
 The solution has 20 strings, but this line should be especially noted:
