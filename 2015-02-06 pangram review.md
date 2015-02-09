@@ -6,13 +6,13 @@ Hello, CiO People!
 Today I would examine the fresh CheckiO mission ["Pangram"][p].
 This mission was based on an idea by [Sim0000][Sim0000_profile],
 which had added to a recent forum [post][forum_post].
-You can propose youк own ideas there too and we will try to make them happen.
+You can propose your own ideas there too and we will try to make them happen.
 
-[Pangram][wikipedia] is a sentence which uses every letter of the alphabet at least once.
-In this mission you need to check text and verify if it is a pangram for the English alphabet or not.
+a [pangram][wikipedia] is a sentence which uses every letter of the alphabet at least once.
+In this mission you need to check text and verify if the given sentence is a pangram for the English alphabet or not.
 
 There are many methods which can be employed to solve this problem. 
-As we can see, it easily to write a solution with a time complexity of O(N), 
+As we can see, it's easy to write a solution with a time complexity of O(N), 
 you just use hash table data types to solve the problem. 
 However, we will not stop at this and will looking for more interesting solutions which were made by CheckiO players.
 
@@ -20,7 +20,7 @@ However, we will not stop at this and will looking for more interesting solution
 
 The first solution we'll look at is titled ["First"][dagger126_first]
 and was created by [dagger126](http://www.checkio.org/user/dagger126/) with a simple and obvious solution. 
-Good usage of built-in set data type.
+There's a good usage of the built-in set data type.
  
 
     from string import ascii_lowercase​
@@ -31,8 +31,8 @@ Good usage of built-in set data type.
 
 Here's an alternate method by [DmitriyS][DmitriyS_profile] titled 
 ["all() + string.ascii_lowercase"][DmitriyS_first]
-As we can see from the title this is a usage of the "all" function with comprehension. 
-Iterate all letters from the alphabet and check they are in the given text.
+As we can see from the title, this uses the "all" function with comprehension. 
+It iterates all of the letters in the alphabet and check if they are in the given text.
 
 ```
 def check_pangram(text):
@@ -51,7 +51,7 @@ check_pangram = lambda text: len({x for x in text.lower() if x.isalpha()}) == 26
 
 ## Creative
 
-In the top of the creative category, we have the ["65" solution][DiZ_65]
+At the top of the creative category, we have the ["65" solution][DiZ_65]
 by [DiZ][DiZ_profile]. Looks like a code golf solution with double meaning using "65"! ;-)
 
 ```
@@ -60,7 +60,7 @@ check_pangram=lambda t:set(map(chr,range(65,91)))<=set(t.upper())
 
 ["Not Very Clean but works"][schanjr_not_clean]
 by [schanjr][schanjr_profile] is "the most complicated solution of the task" as the community member
-[veky][veky_profile](http://www.checkio.org/user/veky/) put it. 
+[veky][veky_profile](http://www.checkio.org/user/veky/) puts it.
 But this solution has made it in the "Creative" category, 
 so I'm sure schanjr made something special. 
 The solution has 20 strings, but this line should be especially noted:
@@ -72,20 +72,21 @@ if all(x is x>=2 for x in count.itervalues()):
 ```
 
 [This comment][veky_not_clean_comment]
-about usage if-else for return can be useful for newbies. Veky explains best practice.
+about using if-else for returns can be useful for newbies. In it, Veky explains the best practices.
 
-But if we would make an award for "the most complicated solution of the task", then I would add 
+If we would make an award for "the most complicated solution for a task", then I would nominate 
 ["First | Naive"][bundgaard_first]
 by [bundgaard][bundgaard_profile].
 
 ## And
 
 We often meet solutions which are written with Python but are not "in" Python - 
-they use a LISP or Java style for example. 
-When I first started to learn Python I wrote C-code with Python syntax and it was funny for Python gurus to read.
+sometimes they use a LISP or Java style of coding for example. 
+When I first started to learn Pythonm for example, I wrote C-code with Python syntax. Python gurus often found this style of code funny to read.
 
-So how about trying to write a "Pangram" solution with Python, but not in Python? Could you do it?
+So, how about trying to write a "Pangram" solution with Python, but not in the Python style? Could you do it?
 
+<!--------------------------------------------------------------------------------------------------------------------->
 
 <!--General Links-->
 
