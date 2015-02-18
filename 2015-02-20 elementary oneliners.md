@@ -1,21 +1,21 @@
 Hi!
 
-As you know we have a special island for newbies -- ["Elementary"][elementary_island].
-On this island we put very simple missions with hints. 
-So if you just have finished TreeHouse or CodeAcademy course and know python syntax,
-then this island for you.
+As you may know we have a special island for newbies -- ["Elementary"][elementary_island].
+On this island we created very simple missions with hints. 
+So if you just have finished TreeHouse or CodeAcademy course, or you already know some python syntax,
+then this island is for you.
 
-But our advanced players have fun there too. For example how to solve a mission with one-liner.
+But more advanced players are having fun there too. For example, they are writing so called 'one-liners'.
 One-liner is a program in just one line of code. 
-And in this overview we will look at one-liners from our players.
+And in this weekly overview we will look at one-liners from our players.
 I will try to choose various players for this overview.
  
 ### [Fizz-Buzz][fizz_buzz]
 
-I think you know about "Fizz Buzz" game to teach children division operation.
+I think you all know about "Fizz Buzz" game, it's used to teach children division.
 
-And we will open today chart with [@nickie's][nickie_profile] ["String arithmetic"][fizz_buzz_nickie] solution.
-He is using `[:-1]` to cut final whitespace and if it's an empty string, then convert the number.
+And we're opening today's chart with [@nickie's][nickie_profile] ["String arithmetic"][fizz_buzz_nickie] solution.
+He is using `[:-1]` to cut final whitespace and if it's an empty string, converts the number.
 
 ```python
 checkio=lambda n:("Fizz "*(1-n%3)+"Buzz "*(1-n%5))[:-1]or str(n)
@@ -25,8 +25,8 @@ checkio=lambda n:("Fizz "*(1-n%3)+"Buzz "*(1-n%5))[:-1]or str(n)
 
 Find the N-th power of the element in the array with the index N.
 
-[@DiZ][DiZ_profile] have written a short [solution](index_power_DiZ) with title "45". 
-I think it's not a puzzle to get the meaning of this title.
+[@DiZ][DiZ_profile] has written a short [solution](index_power_DiZ) named "45". 
+I think it's not a mystery to get the meaning of this solution's title.
 
 ```python
 index_power=lambda a,n:-(len(a)<=n)or a[n]**n
@@ -34,10 +34,10 @@ index_power=lambda a,n:-(len(a)<=n)or a[n]**n
 
 ### [Even The Last][even_last]
 
-Sum of the elements with even indexes then multiply this summed number and the final element of the array together.
+Sum of the elements with even indexes, then multiply this summed number and the final element of the array.
 
 Here I took [@aggelgian's][aggelgian_profile] [solution][even_last_aggelgian]. 
-Only one remark - "Clear" is not the best category for this solution.
+One small remark: "Clear" is not the best category for this solution.
 But it's short and simple.
  
 ```python
@@ -58,8 +58,8 @@ count_words = lambda t, w: len(list(filter(t.lower().count, w)))
 
 Gather all capital letters in one word in the order that they appear in the text.
 
-I think in this case [@veky's][veky_profile] ["filter" solution][secret_message_veky] is placed in "Clear" correct.
-Simple functional style with PEP8 style.
+I think in this case [@veky's][veky_profile] ["filter" solution][secret_message_veky] is placed in "Clear" section correctly.
+Simple and functional code in PEP8 style.
 
 ```python
 find_message = lambda text: ''.join(filter(str.isupper, text))
@@ -110,7 +110,7 @@ left_join=lambda phrases: ''.join(list(''.join([i+',' for i in phrases]))[0:-1])
 ```
 ### [Digits Multiplication][digits_multiplication]
 
-You are given a positive integer. Your function should calculate the product of the digits excluding any zeroes.
+You are given a positive integer. Your function should calculate the product of the digits excluding all the zeros.
 
 [Amachua][Amachua_profile] used "eval" for this mission in [his solution][digits_multiplication_Amachua].
 
@@ -118,9 +118,9 @@ You are given a positive integer. Your function should calculate the product of 
 checkio = lambda n: eval("*".join(i for i in str(n) if i != '0'))
 ```
 
-### To be continue...
+### To be continued...
 
-It was only first half. In the next article we will look at the second ten missions from Elementary.
+It was only first half. In the next article we will take look at the second ten set of missions from Elementary.
 
 
 <!--------------------------------------------------------------------------------------------------------------------->
