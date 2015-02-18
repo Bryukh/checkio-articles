@@ -1,21 +1,20 @@
 Hi!
 
-As you may know we have a special island for newbies -- ["Elementary"][elementary_island].
-On this island we created very simple missions with hints. 
-So if you just have finished TreeHouse or CodeAcademy course, or you already know some python syntax,
-then this island is for you.
+As you may know we have a special island for our coding newbies -- ["Elementary"][elementary_island].
+On this island we've created very simple missions which include hints to help solve them. 
+So if you just have finished the TreeHouse or CodeAcademy courses, or you already know some python syntax,
+then this island is absolutely for you.
 
-But more advanced players are having fun there too. For example, they are writing so called 'one-liners'.
-One-liner is a program in just one line of code. 
-And in this weekly overview we will look at one-liners from our players.
-I will try to choose various players for this overview.
- 
+But our more advanced players are having fun there too. For example, they are adding an extra challenge and writing 'one-liners'.
+A one-liner is a program which takes just one line of code. 
+For this weekly overview we will look at some of the interesting one-liners from our players.
+
 ### [Fizz-Buzz][fizz_buzz]
 
-I think you all know about "Fizz Buzz" game, it's used to teach children division.
+I think you all know about "Fizz Buzz" game by now, it's often used to teach children division.
 
-And we're opening today's chart with [@nickie's][nickie_profile] ["String arithmetic"][fizz_buzz_nickie] solution.
-He is using `[:-1]` to cut final whitespace and if it's an empty string, converts the number.
+And we're opening today's review with [@nickie's][nickie_profile] ["String arithmetic"][fizz_buzz_nickie] solution.
+He is using `[:-1]` to cut some final whitespaces and if it's an empty string, converts the number.
 
 ```python
 checkio=lambda n:("Fizz "*(1-n%3)+"Buzz "*(1-n%5))[:-1]or str(n)
@@ -34,11 +33,10 @@ index_power=lambda a,n:-(len(a)<=n)or a[n]**n
 
 ### [Even The Last][even_last]
 
-Sum of the elements with even indexes, then multiply this summed number and the final element of the array.
+Take the sum of the elements with even indexes, then multiply this summed number and the final element of the array.
 
-Here I took [@aggelgian's][aggelgian_profile] [solution][even_last_aggelgian]. 
-One small remark: "Clear" is not the best category for this solution.
-But it's short and simple.
+Here I took a look at [@aggelgian's][aggelgian_profile] [solution][even_last_aggelgian]. 
+One small remark: "Clear" may not be the best category for this solution, but it sure is short and simple.
  
 ```python
 checkio=lambda x: sum(x[::2])*x[-1] if x else 0
@@ -46,9 +44,9 @@ checkio=lambda x: sum(x[::2])*x[-1] if x else 0
 
 ### [Monkey Typing](monkey_typing)
 
-You are given a text and a set of words. Find how many words are in the given text.
+You are given text and a set of words. Find how many of the listed words are in the given text.
 
-And [suic's][suic_solution] ["Another one-liner"][monkey_typing_suic] solution in functional style.
+And [suic's][suic_solution] ["Another one-liner"][monkey_typing_suic] solution certainly has a functional style.
 
 ```python
 count_words = lambda t, w: len(list(filter(t.lower().count, w)))
@@ -56,10 +54,10 @@ count_words = lambda t, w: len(list(filter(t.lower().count, w)))
 
 ### [Secret Message][secret_message]
 
-Gather all capital letters in one word in the order that they appear in the text.
+Gather all of the capital letters in one word together in the order that they appear in the text.
 
-I think in this case [@veky's][veky_profile] ["filter" solution][secret_message_veky] is placed in "Clear" section correctly.
-Simple and functional code in PEP8 style.
+I think in this case [@veky's][veky_profile] ["filter" solution][secret_message_veky] is deffinitely placed in the "Clear" section correctly.
+It's a simple and functional chunk of code in the PEP8 style.
 
 ```python
 find_message = lambda text: ''.join(filter(str.isupper, text))
@@ -70,7 +68,7 @@ find_message = lambda text: ''.join(filter(str.isupper, text))
 Check if the string contains three words (words contains only letters) in succession.
 
 For this mission I will take [@Tubis's][Tubis_profile] [solution][three_words_tubis]. 
-Yes, I know that's a face account and I know who is it. :-)
+Yes, I know that's a fake account, and I know who is it. :-)
 
 ```python
 checkio=lambda x:"www" in "".join('w' if w.isalpha() else 'd' for w in x.split())
@@ -81,7 +79,7 @@ checkio=lambda x:"www" in "".join('w' if w.isalpha() else 'd' for w in x.split()
 Find the difference between the maximum and minimum element from a number array.
 
 Honestly for this mission we have many identical one-liners,
-so I've taken [@Uladzimir's][Uladzimir_profile] [solution][most_numbers_Uladzimir] from the top.
+so I've taken [@Uladzimir's][Uladzimir_profile] [solution][most_numbers_Uladzimir] from the top of the list.
 
 ```python
 checkio = lambda *args: max(args) - min(args) if args else 0
@@ -91,7 +89,7 @@ checkio = lambda *args: max(args) - min(args) if args else 0
 
 In this mission you should implement some boolean operations: conjunction, disjunction, implication, exclusive and equivalence.
 
-Not the shortest, but short enough ["64 chars"][boolean_algebra_Sim0000] by [@Sim0000][Sim0000_profile].
+This is not the shortest, but it's short enough ["64 chars"][boolean_algebra_Sim0000] by [@Sim0000][Sim0000_profile].
 
 ```python
 boolean=lambda x,y,o:(x&y,x|y,x<=y,x^y,x==y)['oimxq'.find(o[1])]
@@ -100,10 +98,10 @@ boolean=lambda x,y,o:(x&y,x|y,x<=y,x^y,x==y)['oimxq'.find(o[1])]
 
 ### [Right to Left][right_left]
 
-Just replace all "right" word to "left" and join them with commas.
+Just replace all the "right" words with the "left" and join them with commas.
 
 For this we will look at [harold_666's][harold_666_profile] [solution][right_left_harold_666].
-"join" is funny here.
+The "join" is funny here.
 
 ```python
 left_join=lambda phrases: ''.join(list(''.join([i+',' for i in phrases]))[0:-1]).replace('right','left')
@@ -120,7 +118,7 @@ checkio = lambda n: eval("*".join(i for i in str(n) if i != '0'))
 
 ### To be continued...
 
-It was only first half. In the next article we will take look at the second ten set of missions from Elementary.
+This is only first half. In the next article we will take look at the second set of missions I dug up from the Elementary Island.
 
 
 <!--------------------------------------------------------------------------------------------------------------------->
