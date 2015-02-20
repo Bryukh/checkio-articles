@@ -24,7 +24,7 @@ checkio=lambda n:("Fizz "*(1-n%3)+"Buzz "*(1-n%5))[:-1]or str(n)
 
 Find the N-th power of the element in the array with the index N.
 
-[@DiZ][DiZ_profile] has written a short [solution](index_power_DiZ) named "45". 
+[@DiZ][DiZ_profile] has written a short [solution][index_power_DiZ] named "45". 
 I think it's not a mystery to get the meaning of this solution's title.
 
 ```python
@@ -42,7 +42,7 @@ One small remark: "Clear" may not be the best category for this solution, but it
 checkio=lambda x: sum(x[::2])*x[-1] if x else 0
 ```
 
-### [Monkey Typing](monkey_typing)
+### [Monkey Typing][monkey_typing]
 
 You are given text and a set of words. Find how many of the listed words are in the given text.
 
@@ -85,7 +85,7 @@ so I've taken [@Uladzimir's][Uladzimir_profile] [solution][most_numbers_Uladzimi
 checkio = lambda *args: max(args) - min(args) if args else 0
 ```
 
-### [Boolean Algebra](boolean_algebra)
+### [Boolean Algebra][boolean_algebra]
 
 In this mission you should implement some boolean operations: conjunction, disjunction, implication, exclusive and equivalence.
 
