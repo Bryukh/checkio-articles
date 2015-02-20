@@ -46,7 +46,7 @@ checkio=lambda x: sum(x[::2])*x[-1] if x else 0
 
 You are given text and a set of words. Find how many of the listed words are in the given text.
 
-And [suic's][suic_solution] ["Another one-liner"][monkey_typing_suic] solution certainly has a functional style.
+And [suic's][monkey_typing_suic] ["Another one-liner"][monkey_typing_suic] solution certainly has a functional style.
 
 ```python
 count_words = lambda t, w: len(list(filter(t.lower().count, w)))
