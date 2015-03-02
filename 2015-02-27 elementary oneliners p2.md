@@ -3,7 +3,7 @@ Hi!
 In [the last overview][oneliners_p1] we looked at first ten missions from "Elementary" island.
 Today we take the second part of this.
 
-### [Count Inversions][count-inversions]
+### [Count Inversions][count_inversions]
 
 In this mission you need count the number of inversions in a sequence of numbers.
 
@@ -14,7 +14,7 @@ Here we see the interesting usage of double loop in comprehension.
 count_inversion = lambda s: sum(a > b for i, b in enumerate(s) for a in s[:i])
 ```
 
-### [The end of other][end-of-other]
+### [The end of other][end_of_other]
 
 In this task, you are given a set of words in lower case. 
 Check whether there is a pair of words, such that one word is the end of another (a suffix of another).
@@ -25,7 +25,7 @@ And again simple clear one-liner from [@Apua][Apua_profile] ["just one liner"][e
 checkio=lambda S:any(a!=b and a.endswith(b) for a in S for b in S)
 ```
 
-### [Days Between][days-diff]
+### [Days Between][days_diff]
 
 How to find the difference in days between the given dates.
 
@@ -45,7 +45,7 @@ And boring version of "import" in [@ciel's][ciel_profile] [solution][pangram-cie
 import string;check_pangram=lambda t:string.ascii_uppercase in str().join(sorted(list(set(t.upper()))))
 ```
 
-### [Binary count][binary-count]
+### [Binary count][binary_count]
 
 Convert a number to the binary format and count how many unities (1) are in the number spelling.
 
@@ -55,7 +55,7 @@ Short, simple, clear. In ["lambda" solution][binary-count-mastak] by [@mastak][m
 checkio = lambda n: bin(n).count('1')
 ```
 
-### [Number Base][number-radix]
+### [Number Base][number_radix]
 
 You are given a positive number as a string along with the radix for it. 
 Your function should convert it into decimal form.
@@ -66,7 +66,7 @@ Yes, it's really obviously for Python. So let's look at [the short solution][num
 checkio=lambda s,r:int(('-1',s)[int(max(s),36)<r],r)
 ```
 
-### [Common Words][common-words]
+### [Common Words][common_words]
 
 You are given two string with words separated by commas. Try to find what is common between these strings.
 
@@ -76,7 +76,7 @@ Yep, [@somnambulism][somnambulism_profile] didn't use sets in ["oneliner"][commo
 checkio = lambda a, b: ','.join([x for x in sorted(a.split(',')) if x in b.split(',')])
 ```
 
-### [Absolute sorting][absolute-sorting]
+### [Absolute sorting][absolute_sorting]
 
 An array (a tuple) has various numbers. You should sort it, but sort it by absolute value in ascending order.
 
@@ -86,7 +86,7 @@ And again ["Obvious"][absolute-sorting-nickie] solution by [@nickie][nickie_prof
 checkio=lambda a:sorted(a,key=abs)
 ```
 
-### [Building Base][building-base]
+### [Building Base][building_base]
 
 This is not a base mission and players should write a class with the given requirement.
 
@@ -131,15 +131,15 @@ That's all folks for today. Bye!
 [oneliners_p1]: http://www.checkio.org/blog/elementary-one-liners/
 
 <!--Mission Links-->
-[count-inversions]: http://www.checkio.org/mission/count-inversions/share/35d94b8ac5a1dfa2d66132b677fdc359/
-[end-of-other]: http://www.checkio.org/mission/end-of-other/share/5cb25ebe00369db4496f434ec1c0e1a9/
-[days-diff]: http://www.checkio.org/mission/days-diff/share/04f5391af9e2e53a180759136826fd8a/
+[count_inversions]: http://www.checkio.org/mission/count-inversions/share/35d94b8ac5a1dfa2d66132b677fdc359/
+[end_of_other]: http://www.checkio.org/mission/end-of-other/share/5cb25ebe00369db4496f434ec1c0e1a9/
+[days_diff]: http://www.checkio.org/mission/days-diff/share/04f5391af9e2e53a180759136826fd8a/
 [pangram]: http://www.checkio.org/mission/pangram/share/6d2c66db9c7d72144d48c01ae323e868/
-[binary-count]: http://www.checkio.org/mission/binary-count/share/8819896d0c21b21019bb9bc4e85ca6ee/
-[number-radix]: http://www.checkio.org/mission/number-radix/share/62fed2170357aa9592b96e4253df91ec/
-[common-words]: http://www.checkio.org/mission/common-words/share/79b819e840b3432f103244e29f0dad33/
-[absolute-sorting]: http://www.checkio.org/mission/absolute-sorting/share/ba39943ed65e59c43749301605f0b886/
-[building-base]: http://www.checkio.org/mission/building-base/share/3de02090eb5fac4f0da0ced85f9f3f61/
+[binary_count]: http://www.checkio.org/mission/binary-count/share/8819896d0c21b21019bb9bc4e85ca6ee/
+[number_radix]: http://www.checkio.org/mission/number-radix/share/62fed2170357aa9592b96e4253df91ec/
+[common_words]: http://www.checkio.org/mission/common-words/share/79b819e840b3432f103244e29f0dad33/
+[absolute_sorting]: http://www.checkio.org/mission/absolute-sorting/share/ba39943ed65e59c43749301605f0b886/
+[building_base]: http://www.checkio.org/mission/building-base/share/3de02090eb5fac4f0da0ced85f9f3f61/
 [friends]: http://www.checkio.org/mission/friends/share/cc176bba8e683618f5dc27c961cdfe55/
 
 
