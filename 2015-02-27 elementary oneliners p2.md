@@ -1,14 +1,14 @@
 Hi!
 
-In [the last overview][oneliners_p1] we looked at first ten missions from "Elementary" island.
-Today we take the second part of this.
+In [the last Weekly Overview][oneliners_p1] we looked at first ten missions from the "Elementary" island.
+Today we've got the second part of our Weekly Review for your reading pleasure.
 
 ### [Count Inversions][count_inversions]
 
 In this mission you need count the number of inversions in a sequence of numbers.
 
-And we will open our chart with [@veky's][veky_profile] solution ["Gallery"][count-inversion-solution].
-Here we see the interesting usage of double loop in comprehension.
+And we're opening up with [@veky's][veky_profile] solution ["Gallery"][count-inversion-solution].
+Here we see the interesting usage of a double loop in comprehension.
 
 ```python
 count_inversion = lambda s: sum(a > b for i, b in enumerate(s) for a in s[:i])
@@ -17,9 +17,9 @@ count_inversion = lambda s: sum(a > b for i, b in enumerate(s) for a in s[:i])
 ### [The end of other][end_of_other]
 
 In this task, you are given a set of words in lower case. 
-Check whether there is a pair of words, such that one word is the end of another (a suffix of another).
+We must check whether there is a pair of words, such that one word is the end of another (a suffix of another).
 
-And again simple clear one-liner from [@Apua][Apua_profile] ["just one liner"][end-of-other-Apua].
+Here's a simple and clear one-liner from [@Apua][Apua_profile] ["just one liner"][end-of-other-Apua].
 
 ```python
 checkio=lambda S:any(a!=b and a.endswith(b) for a in S for b in S)
@@ -29,7 +29,7 @@ checkio=lambda S:any(a!=b and a.endswith(b) for a in S for b in S)
 
 How to find the difference in days between the given dates.
 
-["oneliner"][days-diff-DiZ] by [@DiZ][DiZ_profile] with "import" variation that is designed specially to write one-liners ;-)
+["oneliner"][days-diff-DiZ] by [@DiZ][DiZ_profile] with the "import" variation which is designed specifically to write one-liners ;-)
 
 ```python
 days_diff=lambda f,t,d=__import__('datetime').date:abs(d(*f)-d(*t)).days
@@ -39,7 +39,7 @@ days_diff=lambda f,t,d=__import__('datetime').date:abs(d(*f)-d(*t)).days
 
 Check if a sentence is a pangram or not.
 
-And boring version of "import" in [@ciel's][ciel_profile] [solution][pangram-ciel]. 
+And here's the typical type of "import" in [@ciel's][ciel_profile] [solution][pangram-ciel]. 
 
 ```python
 import string;check_pangram=lambda t:string.ascii_uppercase in str().join(sorted(list(set(t.upper()))))
@@ -49,7 +49,7 @@ import string;check_pangram=lambda t:string.ascii_uppercase in str().join(sorted
 
 Convert a number to the binary format and count how many unities (1) are in the number spelling.
 
-Short, simple, clear. In ["lambda" solution][binary-count-mastak] by [@mastak][mastak_profile].
+Everything is short, simple and clear in ["lambda" solution][binary-count-mastak] by [@mastak][mastak_profile].
 
 ```python
 checkio = lambda n: bin(n).count('1')
@@ -68,9 +68,9 @@ checkio=lambda s,r:int(('-1',s)[int(max(s),36)<r],r)
 
 ### [Common Words][common_words]
 
-You are given two string with words separated by commas. Try to find what is common between these strings.
+You are given two strings with words separated by commas. Try to find what is common between these strings.
 
-Yep, [@somnambulism][somnambulism_profile] didn't use sets in ["oneliner"][common-words-somnambulism].
+Yep, [@somnambulism][somnambulism_profile] didn't use sets in his ["oneliner"][common-words-somnambulism].
 
 ```python
 checkio = lambda a, b: ','.join([x for x in sorted(a.split(',')) if x in b.split(',')])
@@ -80,7 +80,7 @@ checkio = lambda a, b: ','.join([x for x in sorted(a.split(',')) if x in b.split
 
 An array (a tuple) has various numbers. You should sort it, but sort it by absolute value in ascending order.
 
-And again ["Obvious"][absolute-sorting-nickie] solution by [@nickie][nickie_profile].
+And again we have an ["Obvious"][absolute-sorting-nickie] solution by [@nickie][nickie_profile].
 
 ```python
 checkio=lambda a:sorted(a,key=abs)
@@ -88,7 +88,7 @@ checkio=lambda a:sorted(a,key=abs)
 
 ### [Building Base][building_base]
 
-This is not a base mission and players should write a class with the given requirement.
+This is not a base mission, players should write a class with the given requirement.
 
 Here I've not found a formal one-liner, but I think [this solition with the simple title "zzdgnczfgdmksjdgfjs"][building-base-samulih]
 by [@samulih][samulih_profile] can be counted as one-liner.
@@ -108,7 +108,7 @@ class Building:
 
 And again a mission where you need to write a class.
 
-Yes, again non formal one-liner, but a set of one-liners in ["lambda" solution][friends-jcg] by [@jcg][jcg_profile]. 
+Yes, this is also a not strictly a one-liner, but a set of one-liners in ["lambda" solution][friends-jcg] by [@jcg][jcg_profile]. 
 
 ```python
 class Friends(set):
@@ -123,8 +123,8 @@ class Friends(set):
 ### What next?
 
 We finished our Elementary island with 20 missions in 29 strings (last two mission broke it).
-If you have ideas for the next week solution overview -- feel free to write it us.
-That's all folks for today. Bye!
+If you have ideas for the next week solution overview -- feel free to let us know.
+That's all for today, folks. Bye!
 
 <!--------------------------------------------------------------------------------------------------------------------->
 
