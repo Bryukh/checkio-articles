@@ -51,6 +51,7 @@ def checkio(maze_map, start=(1, 1), goal=(10, 10)):
 ```
 
 > Sarah: "You don't by any chance know the way through this labyrinth, do you?"
+
 > The Worm: "Who, me? No, I'm just a worm. Say, come inside, and meet the missus"
 
 ## A\* search algorithm
