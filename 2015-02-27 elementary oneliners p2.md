@@ -10,7 +10,7 @@ In this mission you need count the number of inversions in a sequence of numbers
 And we're opening up with [@veky's][veky_profile] solution ["Gallery"][count-inversion-solution].
 Here we see the interesting usage of a double loop in comprehension.
 
-```python
+```
 count_inversion = lambda s: sum(a > b for i, b in enumerate(s) for a in s[:i])
 ```
 
@@ -21,7 +21,7 @@ We must check whether there is a pair of words, such that one word is the end of
 
 Here's a simple and clear one-liner from [@Apua][Apua_profile] ["just one liner"][end-of-other-Apua].
 
-```python
+```
 checkio=lambda S:any(a!=b and a.endswith(b) for a in S for b in S)
 ```
 
@@ -31,7 +31,7 @@ How to find the difference in days between the given dates.
 
 ["oneliner"][days-diff-DiZ] by [@DiZ][DiZ_profile] with the "import" variation which is designed specifically to write one-liners ;-)
 
-```python
+```
 days_diff=lambda f,t,d=__import__('datetime').date:abs(d(*f)-d(*t)).days
 ```
 
@@ -41,7 +41,7 @@ Check if a sentence is a pangram or not.
 
 And here's the typical type of "import" in [@ciel's][ciel_profile] [solution][pangram-ciel]. 
 
-```python
+```
 import string;check_pangram=lambda t:string.ascii_uppercase in str().join(sorted(list(set(t.upper()))))
 ```
 
@@ -51,7 +51,7 @@ Convert a number to the binary format and count how many unities (1) are in the 
 
 Everything is short, simple and clear in ["lambda" solution][binary-count-mastak] by [@mastak][mastak_profile].
 
-```python
+```
 checkio = lambda n: bin(n).count('1')
 ```
 
@@ -62,7 +62,7 @@ Your function should convert it into decimal form.
 
 Yes, it's really obviously for Python. So let's look at [the short solution][number-radix-shiracamus] by [@shiracamus][shiracamus_profile]
 
-```python
+```
 checkio=lambda s,r:int(('-1',s)[int(max(s),36)<r],r)
 ```
 
@@ -72,7 +72,7 @@ You are given two strings with words separated by commas. Try to find what is co
 
 Yep, [@somnambulism][somnambulism_profile] didn't use sets in his ["oneliner"][common-words-somnambulism].
 
-```python
+```
 checkio = lambda a, b: ','.join([x for x in sorted(a.split(',')) if x in b.split(',')])
 ```
 
@@ -82,7 +82,7 @@ An array (a tuple) has various numbers. You should sort it, but sort it by absol
 
 And again we have an ["Obvious"][absolute-sorting-nickie] solution by [@nickie][nickie_profile].
 
-```python
+```
 checkio=lambda a:sorted(a,key=abs)
 ```
 
@@ -94,7 +94,7 @@ Here I've not found a formal one-liner, but I think [this solition with the simp
 by [@samulih][samulih_profile] can be counted as one-liner.
 
 
-```python
+```
 class Building:
     __repr__ = lambda s: '%s%s' % (s.__class__.__name__, s.d)
     def __init__(s, *args, methods=('area', 'volume', 'corners')):
@@ -110,7 +110,7 @@ And again a mission where you need to write a class.
 
 Yes, this is also a not strictly a one-liner, but a set of one-liners in ["lambda" solution][friends-jcg] by [@jcg][jcg_profile]. 
 
-```python
+```
 class Friends(set):
     __init__ = lambda self, connections: self.update(map(frozenset, connections))
     add = lambda self, connection: not(connection in self or super().add(frozenset(connection)))
@@ -161,6 +161,7 @@ That's all for today, folks. Bye!
 [nickie_profile]: http://www.checkio.org/user/nickie/
 [samulih_profile]: http://www.checkio.org/user/samulih/
 [jcg_profile]: http://www.checkio.org/user/jcg/
+[ciel_profile]: http://www.checkio.org/user/ciel/
 
 <!--solutions-->
 [count-inversion-solution]: http://www.checkio.org/mission/count-inversions/publications/veky/python-3/gallery/share/c7f7eb90b2f34e2f3d9e0bd29830e096/
