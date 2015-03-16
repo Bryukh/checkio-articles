@@ -1,11 +1,11 @@
 Hi, CiO friends!
 
-Let's find a route between two points in the maze. 
+Let's find a path between two points in the maze. 
 For this we will look at ["Open Labyrinth"][open-labyrinth] mission.
-In this mission you are given a map of a maze and you should find a path from one corner to other.
+In this mission you are given a map of a maze and your task is to find a path from one corner to another.
 The maze can be represented as a graph where empty cells are nodes and adjacent cells are connected.
-Because we don't need find the shortest path, so we can use various graph traversal algorithms.
-We can look at that algorithms with our player solutions. 
+Because we don't need find the shortest path, we can use various graph traversal algorithms.
+So let's see what algorithms our players came up with. 
 
 > "So, the Labyrinth is a piece of cake, is it? Well, let's see how you deal with this little slice..."
  
@@ -20,7 +20,7 @@ BFS visits the parent nodes before visiting the child nodes.
 A stack is used for DFS and a queue for BFS. So you can easily "switch" DFS to BFS.
 
 [@spoty's][spoty] solution ["BFS + deque"][bfs-spoty] is a classical BFS realisation.
-There is using the double ended queue. It's faster than list using and also we can
+There is using the double ended queue. It's faster than using a list and also we can
 easily switch BFS to DFS just replace "q.popleft()" => "q.popright()".
 
 ```
@@ -58,7 +58,7 @@ def checkio(maze_map, start=(1, 1), goal=(10, 10)):
 
 As A* traverses the graph, it follows a path of the lowest expected total cost or distance,
 keeping a sorted priority queue of alternate path segments along the way.
-You can read more at [Wikipedia](http://en.wikipedia.org/wiki/A*_search_algorithm).
+You can read more on [Wikipedia](http://en.wikipedia.org/wiki/A*_search_algorithm).
 
 For priority queue Python has _heapq_ module and [@PositronicLlama's][PositronicLlama] solution
 ["First"][first-PositronicLlama] uses it and _namedtuples_ add readabilty here.
