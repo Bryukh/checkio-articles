@@ -1,11 +1,11 @@
 Hi, CiO friends!
 
-Let's find a path between two points in the maze. 
-For this we will look at ["Open Labyrinth"][open-labyrinth] mission.
-In this mission you are given a map of a maze and your task is to find a path from one corner to another.
+Today, let's try to find a path between two points in the maze. 
+We will take a closer look at the ["Open Labyrinth"][open-labyrinth] mission.
+In this mission you are given the map of a maze, and your task is to find a path from one corner to another.
 The maze can be represented as a graph where empty cells are nodes and adjacent cells are connected.
-Because we don't need find the shortest path, we can use various graph traversal algorithms.
-So let's see what algorithms our players came up with. 
+Because we don't need find the shortest path, we can use various graph-traversal algorithms.
+So let's see what algorithms the CheckiO community came up with. 
 
 > "So, the Labyrinth is a piece of cake, is it? Well, let's see how you deal with this little slice..."
  
@@ -19,9 +19,7 @@ that is, it traverses the depth of any particular path before exploring its brea
 BFS visits the parent nodes before visiting the child nodes.
 A stack is used for DFS and a queue for BFS. So you can easily "switch" DFS to BFS.
 
-[@spoty's][spoty] solution ["BFS + deque"][bfs-spoty] is a classical BFS realisation.
-There is using the double ended queue. It's faster than using a list and also we can
-easily switch BFS to DFS just replace "q.popleft()" => "q.popright()".
+[@spoty's][spoty] solution ["BFS + deque"][bfs-spoty] is a classical BFS realisation, using a double ended queue. It's faster than using a list and also we can easily switch BFS to DFS by simply replacing "q.popleft()" => "q.popright()".
 
 ```
 from collections import deque
@@ -60,8 +58,8 @@ As A* traverses the graph, it follows a path of the lowest expected total cost o
 keeping a sorted priority queue of alternate path segments along the way.
 You can read more on [Wikipedia](http://en.wikipedia.org/wiki/A*_search_algorithm).
 
-For priority queue Python has _heapq_ module and [@PositronicLlama's][PositronicLlama] solution
-["First"][first-PositronicLlama] uses it and _namedtuples_ add readabilty here.
+For priority queuing, Python has the _heapq_ module and [@PositronicLlama's][PositronicLlama] solution
+["First"][first-PositronicLlama] takes advantage of it combined with _namedtuples_ to add readabilty here.
 
 ```
 """
@@ -146,17 +144,17 @@ BFS and A* are the most used algorithms, but there are many others.
 
 [Dijkstra's algorithm](http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) is famous, so 
 [@Miaou's][Miaou] ["Dijkstra's Forever !"][Miaou-dijkstras-forever] with explicit comments
-can help to learn this algorithm.
+which can help you to figure out this algorithm.
 
 [Lee algorithm](http://en.wikipedia.org/wiki/Lee_algorithm) is a BFS variation and 
-[@suic][suic] demonstrates us how it's work in his ["First"][suic-first] solution.
+[@suic][suic] demonstrates to us how it works in his ["First"][suic-first] solution.
 
-Or you can turn always right (or left) to find the exit how it did
-[@tetedemerou][tetedemerou] in ["Always a pit on the right"][tetedemerou-always-a-pit-on-the-right]
+Or you can take the classic maze approach and always turn one direction (right or left) to find the exit as
+[@tetedemerou][tetedemerou] did in the ["Always a pit on the right"][tetedemerou-always-a-pit-on-the-right]
 solution.
 
-Random algorithm is an algorithm too and [@AndriusMk][AndriusMk] made
-["Trolling :)"][AndriusMk-trolling] solution for this.
+Technically a random movement algorithm is a viable algorithm too, and [@AndriusMk][AndriusMk] made their
+["Trolling :)"][AndriusMk-trolling] solution to illustrate this point.
 
 > Tell me Sarah, what do you think of my labyrinth?
 
