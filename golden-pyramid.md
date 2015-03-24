@@ -1,20 +1,20 @@
 Hi!
 
-Let's look at a classical CS problem that was realised as Checkio mission.
-I tell about ["Golden Pyramid"][golden-pyramid].
+Let's look at a classical CS problem that was realised as the Checkio mission.
+I mean ["Golden Pyramid"][golden-pyramid] mission.
 
 Consider a triangle of numbers. There is one number in the top of the triangle.
 On the next level - two numbers, then three and so on.
 You are start at the top and should down to the bottom of the triangle.
-For each step down to the next level you can move to on of two cell below current.
-And for each step you "collect" (summarize) passed numbers.
+For each step down you can move to on of two cell below current.
+And you "collect" (summarize) passed numbers.
 Your goal is find the maximum possible sum of numbers for all possible routes from top to bottom.
 
 ![GP Example](http://checkio.s3.amazonaws.com/blog/share/golden-pyramid-example.svg)
 
 # Recursive
 
-The first obvious idea is to use recursive and check various path from top to down.
+The first obvious idea is to use recursion and calculate all paths from top to down.
 When we down to one level, then all below available cells are the new sub-triangle and
 we can start our function one more time for the new triangle. And so on until we reach the bottom.
 Simple and obviously.
@@ -29,16 +29,17 @@ def golden_pyramid(triangle, row=0, column=0, total=0):
                golden_pyramid(triangle, row + 1, column + 1, total + triangle[row][column]))
 ```
 
-But as we can see for first level we run our function 2 times, then 4, 8, 16....
-So as result we will get 2\*\*N complexity. Not good.
+But as we can see for the first level we run our function 2 times, then 4, 8, 16....
+So as result we will get 2<sup>N</sup> complexity and 
+for the hundred-storied pyramid we need ≈ 10<sup>30</sup> function calls. Hm... 
 
 ![GP Recursion](http://checkio.s3.amazonaws.com/blog/share/golden-pyramid-recursive.svg)
 
 
 # Dynamic Programming
 
-But what if we will use dynamic programming method and break our problem to small pieces, which can
-be accumulated.
+But what if we will use dynamic programming method and break our problem to small pieces,
+which can be merged then.
 For simplicity look at the triangle upside down. Now look at the second (from new top) level.
 For each cell we can choose what is the best possible for this small three element triangle.
 Choose the best from the first level (early bottom), summarize with current cell value and write it.
@@ -59,7 +60,7 @@ def golden_pyramid_d(triangle):
 # Checkio Player Solutions
 
 [@gyahun_dash] made the interesting realisation of dynamic programming method in 
-["DP" solution][gyahun_dash-dp]. He used "reduce" to work with rows by pairs with accumulating and
+["DP" solution][gyahun_dash-dp]. He used "reduce" to work at rows by pairs with accumulating and
 "map" to process each level.
  
 ```
@@ -96,7 +97,7 @@ def count_gold(p):
 And just for final little brain breaking puzzle (don't worry it's not too hard) with
 [@nickie's][nickie] in ["Functional DP" one-liner][nickie-functional] which is only formally 
 two-liners. Of course this is solution from "Creative" category and don't think that @nickie
-write this for production. Just for fun.
+writes this for production. Just for fun.
 
 ```
 count_gold=lambda p:__import__("functools").reduce(lambda D,r:[x+max(D[j],D[j+1])
@@ -106,12 +107,6 @@ for j,x in enumerate(r)],p[-2::-1],list(p[-1]))[0]
 That's all folks. Propose your ideas for the next articles.
 
 _Valentin Bryukhanov aka Bryukh_
-
-
-
-
-
-
 
 
 
