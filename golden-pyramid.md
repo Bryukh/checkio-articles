@@ -58,6 +58,54 @@ def golden_pyramid_d(triangle):
 
 # Checkio Player Solutions
 
+[@gyahun_dash] made the interesting realisation of dynamic programming method in 
+["DP" solution][gyahun_dash-dp]. He used "reduce" to work with rows by pairs with accumulating and
+"map" to process each level.
+ 
+```
+from functools import reduce
+​
+def sum_triangle(top, left, right):
+    return top + max(left, right)
+​
+def integrate(lowerline, upperline):
+    return list(map(sum_triangle, upperline, lowerline, lowerline[1:]))
+​
+def count_gold(pyramid):
+    return reduce(integrate, reversed(pyramid)).pop()
+```
+
+[@evoynov][evoynov] used binary numbers to define all possible paths as combinations of 1 and 0
+ in ["Binaries" solution][evoynov-binaries]. 
+ But this solution has the complexity as recursive method that was described early. 
+
+```
+def count_gold(p):
+    path = 1 << len(p)
+    res = 0
+    while bin(path).count("1") != len(p) + 1:
+        s = ind = 0
+        for row in range(len(p)):
+            ind += 1 if row > 0 and bin(path)[3:][row] == "1" else 0
+            s += p[row][ind]
+        res = max(res, s)
+        path += 1
+    return res
+```
+
+And just for final little brain breaking puzzle (don't worry it's not too hard) with
+[@nickie's][nickie] in ["Functional DP" one-liner][nickie-functional] which is only formally 
+two-liners. Of course this is solution from "Creative" category and don't think that @nickie
+write this for production. Just for fun.
+
+```
+count_gold=lambda p:__import__("functools").reduce(lambda D,r:[x+max(D[j],D[j+1])
+for j,x in enumerate(r)],p[-2::-1],list(p[-1]))[0]
+```
+
+That's all folks. Propose your ideas for the next articles.
+
+_Valentin Bryukhanov aka Bryukh_
 
 
 
@@ -67,11 +115,14 @@ def golden_pyramid_d(triangle):
 
 
 
-
-
-
-
+<!--------------------------------------------------------------------------------------------------------------------->
 
 [golden-pyramid]: http://www.checkio.org/mission/golden-pyramid/share/b88523a147fdb0960da155eb777729f0/
 
-[golden-pyramid-example_svg]: http://checkio.s3.amazonaws.com/blog/share/golden-pyramid-example.svg
+[gyahun_dash]: http://www.checkio.org/user/gyahun_dash/
+[evoynov]: http://www.checkio.org/user/evoynov/
+[evoynov]: http://www.checkio.org/user/evoynov/
+
+[gyahun_dash-dp]: http://www.checkio.org/mission/golden-pyramid/publications/gyahun_dash/python-3/dp/share/28008da26f7ecba0593f7b71a5250b25/
+[evoynov-binaries]: http://www.checkio.org/mission/golden-pyramid/publications/evoynov/python-3/binaries/share/95c5578eef9be0c793fc37fe54bdc95e/
+[nickie-functional]: http://www.checkio.org/mission/golden-pyramid/publications/nickie/python-3/functional-dp/share/98bff2a8ad1f0ca4897de6e884ec384d/
