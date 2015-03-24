@@ -54,7 +54,7 @@ def checkio(maze_map, start=(1, 1), goal=(10, 10)):
 
 ## A\* search algorithm
 
-As A* traverses the graph, it follows a path of the lowest expected total cost or distance,
+As A\* traverses the graph, it follows a path of the lowest expected total cost or distance,
 keeping a sorted priority queue of alternate path segments along the way.
 You can read more on [Wikipedia](http://en.wikipedia.org/wiki/A*_search_algorithm).
 
