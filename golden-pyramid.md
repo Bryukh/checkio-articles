@@ -1,7 +1,7 @@
 Hi!
 
-Let's look at a classical CS problem that was realised as the Checkio mission.
-I mean ["Golden Pyramid"][golden-pyramid] mission.
+Today, let's look at a classical CS problem that was realised as the Checkio mission.
+I of course mean the ["Golden Pyramid"][golden-pyramid] mission.
 
 Consider a triangle of numbers. There is one number in the top of the triangle.
 On the next level - two numbers, then three and so on.
@@ -14,10 +14,10 @@ Your goal is find the maximum possible sum of numbers for all possible routes fr
 
 # Recursive
 
-The first obvious idea is to use recursion and calculate all paths from top to down.
-When we down to one level, then all below available cells are the new sub-triangle and
-we can start our function one more time for the new triangle. And so on until we reach the bottom.
-Simple and obviously.
+The first obvious idea is to use recursion and calculate all paths from the top down.
+When we move down a level, then all available cells below are a new sub-triangle and
+we can start our function again for the new triangle- and so on until we reach the bottom.
+Simple and obvious.
 
 ```
 def golden_pyramid(triangle, row=0, column=0, total=0):
@@ -29,7 +29,7 @@ def golden_pyramid(triangle, row=0, column=0, total=0):
                golden_pyramid(triangle, row + 1, column + 1, total + triangle[row][column]))
 ```
 
-But as we can see for the first level we run our function 2 times, then 4, 8, 16....
+As we can see for the first level we run our function 2 times, then 4, 8, 16....
 So as result we will get 2<sup>N</sup> complexity and 
 for the hundred-storied pyramid we need ≈ 10<sup>30</sup> function calls. Hm... 
 
@@ -38,10 +38,10 @@ for the hundred-storied pyramid we need ≈ 10<sup>30</sup> function calls. Hm..
 
 # Dynamic Programming
 
-But what if we will use dynamic programming method and break our problem to small pieces,
-which can be merged then.
-For simplicity look at the triangle upside down. Now look at the second (from new top) level.
-For each cell we can choose what is the best possible for this small three element triangle.
+What if we use a dynamic programming method and break our problem into small pieces,
+which can be merged together.
+For simplicity's sake, look at the triangle upside down. Now look at the second (from the new top) level.
+For each cell we can choose what the best possible is for this small three element triangle.
 Choose the best from the first level (early bottom), summarize with current cell value and write it.
 Now we have the new shorter triangle and can repeat this operation again and again.
 As result we have (N-1)+(N-2)+...2+1 operations and this is N\*\*2 complexity.
@@ -59,8 +59,8 @@ def golden_pyramid_d(triangle):
 
 # Checkio Player Solutions
 
-[@gyahun_dash] made the interesting realisation of dynamic programming method in 
-["DP" solution][gyahun_dash-dp]. He used "reduce" to work at rows by pairs with accumulating and
+[@gyahun_dash] made an interesting realisation of a dynamic programming method in 
+["DP" solution][gyahun_dash-dp]. He used "reduce" to work the rows by pairs with accumulating and
 "map" to process each level.
  
 ```
@@ -78,7 +78,7 @@ def count_gold(pyramid):
 
 [@evoynov][evoynov] used binary numbers to define all possible paths as combinations of 1 and 0
  in ["Binaries" solution][evoynov-binaries]. 
- But this solution has the complexity as recursive method that was described early. 
+ This solution has the complexity of the recursive method described earlier. 
 
 ```
 def count_gold(p):
@@ -95,16 +95,16 @@ def count_gold(p):
 ```
 
 And just for final little brain breaking puzzle (don't worry it's not too hard) with
-[@nickie's][nickie] in ["Functional DP" one-liner][nickie-functional] which is only formally 
-two-liners. Of course this is solution from "Creative" category and don't think that @nickie
-writes this for production. Just for fun.
+[@nickie's][nickie] ["Functional DP" one-liner][nickie-functional] which is only formally 
+two-lines. Of course this is a solution from the "Creative" category. I don't think that @nickie
+writes this way for production, just for fun.
 
 ```
 count_gold=lambda p:__import__("functools").reduce(lambda D,r:[x+max(D[j],D[j+1])
 for j,x in enumerate(r)],p[-2::-1],list(p[-1]))[0]
 ```
 
-That's all folks. Propose your ideas for the next articles.
+That's all folks. Let me know your ideas for the next article and I'll write something fun!
 
 _Valentin Bryukhanov aka Bryukh_
 
