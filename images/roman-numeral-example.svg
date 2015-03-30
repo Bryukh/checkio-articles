@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="690" height="200" viewBox="0, 0, 690, 200">
+  <g id="Layer_1">
+    <text transform="matrix(1, 0, 0, 1, 75, 31.5)">
+      <tspan x="-5.282" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">I</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 161.497, 31.5)">
+      <tspan x="-11.452" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">V</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 255, 31.5)">
+      <tspan x="-11.452" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">X</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 345, 31.5)">
+      <tspan x="-10.002" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">L</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 435, 31.5)">
+      <tspan x="-11.452" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">C</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 525, 31.5)">
+      <tspan x="-11.909" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">D</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 615, 31.5)">
+      <tspan x="-15.662" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">M</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 75, 78.5)">
+      <tspan x="-10.327" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 161.497, 78.5)">
+      <tspan x="-10.327" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">5</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 255, 78.5)">
+      <tspan x="-20.654" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">10</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 345, 78.5)">
+      <tspan x="-20.654" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 435, 78.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">100</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 525, 78.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">500</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 615, 78.5)">
+      <tspan x="-41.309" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">1000</tspan>
+    </text>
+    <path d="M30.5,10.5 L120.5,10.5 L120.5,100.5 L30.5,100.5 L30.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M120.5,10.5 L210.5,10.5 L210.5,100.5 L120.5,100.5 L120.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M210.5,10.5 L300.5,10.5 L300.5,100.5 L210.5,100.5 L210.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M300.5,10.5 L390.5,10.5 L390.5,100.5 L300.5,100.5 L300.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M390.5,10.5 L480.5,10.5 L480.5,100.5 L390.5,100.5 L390.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M480.5,10.5 L570.5,10.5 L570.5,100.5 L480.5,100.5 L480.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M570.5,10.5 L660.5,10.5 L660.5,100.5 L570.5,100.5 L570.5,10.5 z" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <path d="M30.5,55.5 L660.5,55.5" fill-opacity="0" stroke="#175D7F" stroke-width="3"/>
+    <text transform="matrix(1, 0, 0, 1, 345, 131.5)">
+      <tspan x="-207.694" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">42 = 50 - 10 + 1 + 1 = XLII</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 345, 177.5)">
+      <tspan x="-304.444" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">2015 = 1000 + 1000 + 10 + 5 = MMXV</tspan>
+    </text>
+  </g>
+</svg>
