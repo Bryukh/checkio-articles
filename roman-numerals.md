@@ -2,7 +2,7 @@
 
 Republic, Julius Caesar and  Colosseum. Yes, I'm talking about Ancient Rome.
 Couple days ago I've read Conn Iggulden's book about Caesar inherit - Octavian
-and remember about Checkio Mission "Roman Numerals". So let's look at that today. 
+and remember about Checkio Mission "Roman Numerals". So let's look at these numeral system today. 
 
 Roman numerals come from the ancient Roman numbering system.
 They are based on specific letters of the alphabet which are combined to signify the sum 
@@ -30,8 +30,9 @@ Here is those "elements" for the roman numerals:
 "I"    1
 ```
 
-Next we try to subtract these numbers from the given until we can. And connect characters
-from left to right. The result is our number in roman form.
+Next we try to subtract these numbers from the given until we can. 
+And connect characters from left to right.
+The result is our number in roman form.
 
 ```
 ELEMENTS = (("M", 1000), ("CM", 900), ("D", 500), ("CD", 400),
