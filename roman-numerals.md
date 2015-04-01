@@ -1,16 +1,16 @@
 # Roman Numerals
 
-Republic, Julius Caesar and  Colosseum. Yes, I'm talking about Ancient Rome.
-Couple days ago I've read Conn Iggulden's book about Caesar inherit - Octavian
-and remember about Checkio Mission "Roman Numerals". So let's look at these numeral system today. 
+The Republic, Julius Caesar, The Colosseum. Yes, I'm talking about Ancient Rome.
+A few days ago I read Conn Iggulden's book about Caesar successor, Octavian
+and remembered the CheckiO mission "Roman Numerals". So let's look revisit this numeral system. 
 
 Roman numerals come from the ancient Roman numbering system.
 They are based on specific letters of the alphabet which are combined to signify the sum 
 (or, in some cases, the difference) of their values. The first ten Roman numerals are:
 
-`I, II, III, IV, V, VI, VII, VIII, IX, and X.`
+`I, II, III, IV, V, VI, VII, VIII, IX, X`
 
-The Roman numeral system is decimal based but not directly positional and does not include a zero.
+The Roman numeral system is decimal based, but not directly positional and does not include a zero.
 Roman numerals are based on combinations of these seven symbols:
 
 ![Roman-numerals](http://checkio.s3.amazonaws.com/blog/share/roman-numeral-example.svg)
@@ -51,15 +51,15 @@ def checkio(number):
 
 ## "Clear" Solutions
 
-In "Clear" category [@JulianNicholls's][JulianNicholls] ["First" solution][JulianNicholls-solution]
-has many players votes and uses simple clear algorithm.
+In the "Clear" category, [@JulianNicholls's][JulianNicholls] ["First" solution][JulianNicholls-solution]
+has earned many player votes and uses simple clear algorithm.
 
-The next is [Mark Pilgrim's realisation][macfreek-solution] was written by [@macfreek][macfreek].
-This solution is like was described early but with comments and other "production" features.
+The next is [Mark Pilgrim's realisation][macfreek-solution] written by [@macfreek][macfreek].
+This solution is like the previous one but with comments and other "production" features.
 
 ## "Creative" solutions (just for fun)
 
-How about [veeeery long one-liner][ciel-solution] from [@ciel][ciel]?
+How about a [veeeery long one-liner][ciel-solution] from [@ciel][ciel]?
 
 ```
 checkio=lambda data: ['','M','MM','MMM'][data//1000]+['','C','CC','CCC','CD','D','DC','DCC','DCCC','CM'][data//100%10]+['','X','XX','XXX','XL','L','LX','LXX','LXXX','XC'][data//10%10]+['','I','II','III','IV','V','VI','VII','VIII','IX'][data%10]
@@ -73,7 +73,7 @@ def checkio(data):
     return s(data, [(1000, 'M'), (900, 'MC'), (500, 'D'), (400, 'DC'), (100, 'C'), (90, 'CX'), (50, 'L'), (40, 'LX'), (10, 'X'), (9, 'XI'), (5, 'V'), (4, 'VI'), (1, 'I')])[::-1]
 ```
 
-And [puzzler "dict FTW"][veky-solution] from [@veky][veky] instead weekend crossword for you.
+Or even the [puzzler "dict FTW"][veky-solution] from [@veky][veky] instead of a weekend crossword for you.
 
 ```
 def checkio(x):
@@ -87,7 +87,7 @@ def checkio(x):
     return a
 ```
 
-That's all folks. Maybe you would to review some CiO mission?
+That's all folks. Maybe you would like to review some CiO mission? 
 
 <!--------------------------------------------------------------------------------------------------------------------->
 
