@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="516" height="186" viewBox="0, 0, 516, 186">
+  <g id="Layer_1">
+    <text transform="matrix(1, 0, 0, 1, 150.981, 21.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">115</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 150.981, 93.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">515</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 150.981, 165.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">511</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 42.981, 93.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#A63A12">111</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 258.981, 21.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">175</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 366.981, 21.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">875</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 258.981, 93.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">519</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 258.981, 165.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">591</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 366.981, 93.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">919</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 366.981, 165.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">599</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 474.981, 165.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#A63A12">999</tspan>
+    </text>
+    <path d="M74.463,90.5 L114.5,18.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M114.5,162.5 L74.463,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M74.463,90.5 L114.5,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M186.5,18.5 L222.5,18.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M186.5,90.5 L222.5,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M180.5,162.5 L222.5,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M180.5,162.5 L216.5,162.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M288.5,162.5 L330.5,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M294.5,90.5 L330.5,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M294.5,18.5 L330.5,18.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M402.5,90.5 L438.5,18.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M288.5,162.5 L330.5,162.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 474.981, 21.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">989</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 474.981, 93.5)">
+      <tspan x="-30.981" y="11.5" font-family="Roboto-Bold" font-size="36" fill="#115C81">916</tspan>
+    </text>
+    <path d="M438.5,162.5 L402.5,162.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M402.5,90.5 L438.5,162.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M402.5,90.5 L438.5,90.5" fill-opacity="0" stroke="#175D7F" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
