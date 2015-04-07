@@ -1,16 +1,16 @@
 # Digit Doublets
 
-Do you know - we have the special island in CheckiO that is devoted by Lewis Carroll?
+Did you know that we have the special island in CheckiO that is devoted by Lewis Carroll?
 Charles Dodgson (aka Lewis Carroll) was an English writer, mathematician, logician,
-Anglican deacon and photographer. And he wrote several books with mathemical and logical puzzles.
+Anglican deacon and photographer. He also wrote several books with mathemical and logical puzzles.
 ["Alice in Wonderland" island](http://www.checkio.org/station/alice/) contains
-6 mission which are based on Lewis Carroll puzzles or some ideas from that cult book.
+6 mission which are based on Lewis Carroll's puzzles or some ideas from that cult book.
 And today I would like to look at ["Digit Doublets" mission](http://www.checkio.org/mission/digits-doublets/share/911c36cfc7e36e7394548adbca23eb49/)
 
 ## Description
 
 Doublets, sometimes known as Word ladder, is a word game invented by Charles Dodgson
-(aka Lewis Carroll). A doublets puzzle begins with two words.
+(aka Lewis Carroll). Doublets puzzle begins with two words.
 To solve the puzzle one must find a chain of different words 
 to link the two together such that the two adjacent words differ by one letter.
 
@@ -22,7 +22,7 @@ such that the two adjacent numbers differ by one digit.
 
 # Solution
 
-This mission maybe is looked hard or combinatorial, but let's little think about representation.
+This mission maybe is looked hard or combinatorial, but let's think a little bit about representation.
 For example we are given this set of numbers: 
 `111, 115, 175, 511, 515, 519, 591, 599, 875, 919, 999` and you need to link 111 and 999.
  
@@ -32,7 +32,7 @@ Stop. Is it look like a something familiar? Yes, this is a graph.
 ![Digit Graph](http://checkio.s3.amazonaws.com/blog/share/digit-graph.svg)
 
 So we need to convert it to graph representation and find a path. 
-I will not write a part about pathfinding, because you can easily find it in the recent article
+I won't talk about pathfinding part, because you can easily find it in the recent article
 -- ["Open Labyrinth" review](http://www.checkio.org/blog/find-path/).
 
 ```
