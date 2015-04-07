@@ -71,7 +71,22 @@ while to_search:
 
 # "Creative" CiO solutions
 
+Honestly for "Creative" category I see only one solution by [@Juge_Ti](http://www.checkio.org/user/Juge_Ti/)
+and this is ["Recursive"][Juge_Ti-recursive] code.
 
+```
+def f(l,c,u):
+ if l[-1]in c:return c
+ s=[f(l,c+[x],u|{x})for x in set(l)-u if sum(`c[-1]`[i]==`x`[i]for i in(0,1,2))==2]
+ return min(s,key=len)if s else[1]*99
+checkio=lambda l:f(l,[l[0]],{l[0]})
+```
+
+That's all folks. Bye for a next review.
+
+_Valentin Bryukhanov aka Bryukh_
 
 [PositronicLlama-solution]: http://www.checkio.org/mission/digits-doublets/publications/PositronicLlama/python-3/a/share/0a94d5a3b22839f0e88e53a7b548163f/
 [LexCavalera-solution]: http://www.checkio.org/mission/digits-doublets/publications/LexCavalera/python-27/first/share/620074f0660cae9881b2e999651e5102/
+
+[Juge_Ti-recursive]: http://www.checkio.org/mission/digits-doublets/publications/Juge_Ti/python-27/recursive/share/fb04f3e9d88479c9454386a37178ef14/
