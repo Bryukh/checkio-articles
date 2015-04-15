@@ -1,6 +1,6 @@
 # Digit Doublets
 
-Did you know that we have a special island in CheckiO that is devoted to the author Lewis Carroll?
+Did you know that we have a special island on CheckiO that is devoted to the author Lewis Carroll?
 Charles Dodgson (aka Lewis Carroll) was an English writer, mathematician, logician,
 Anglican deacon and photographer. He also wrote several books with mathemical and logical puzzles.
 ["Alice in Wonderland" island](http://www.checkio.org/station/alice/) contains
@@ -26,8 +26,8 @@ This mission might look difficult or combinatorial, but let's think a little bit
 For example we are given this set of numbers: 
 `111, 115, 175, 511, 515, 519, 591, 599, 875, 919, 999` and you need to link 111 and 999.
  
-As we can see 111 can be changed at 115 and 511. From 511 we can move to 519 or 591. 
-Stop. Does it look like a something familiar? Yes, this is a graph.
+As we can see 111 can be changed to 115 and 511. From 511 we can move to 519 or 591. 
+Stop. Does this look like something familiar? Yes, this is a graph.
 
 ![Digit Graph](http://checkio.s3.amazonaws.com/blog/share/digit-graph.svg)
 
@@ -82,7 +82,7 @@ def f(l,c,u):
 checkio=lambda l:f(l,[l[0]],{l[0]})
 ```
 
-That's all folks. Bye fornow, I'll see you in our next review.
+That's all folks. Bye for now, I'll see you in our next review.
 
 _Valentin Bryukhanov aka Bryukh_
 
