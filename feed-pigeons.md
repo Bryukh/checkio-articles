@@ -1,26 +1,22 @@
 Hi, CiO Friends!
 
-On our landing page you can find one mission text with solutions.
-And this is ["Feed Pigeons"][mission]. 
-I'm not sure why but this mission can trouble new players.
+On our landing page you can find a mission we've designed for newer CheckiO players: ["Feed Pigeons"][mission]. 
+Sometimes this mission be a little challenging, so I thought we'd take a look at some different ways players have taken this mission on.
 
 ## Description
 
-I start to feed one of the pigeons.
-A minute later two more fly by and a minute after that another 3.
+I feed one pigeon, a minute later two more fly by and a minute after that another 3.
 Then 4, and so on (Ex: 1+2+3+4+...). 
-One portion of food lasts a pigeon for a minute, 
-but in case there's not enough food for all the birds, the pigeons who arrived first ate first. 
+One portion of the food lasts a pigeon for a minute, so the pigeons get to eat on a first come first serve basis. 
 Pigeons are hungry animals and eat without knowing when to stop. 
 If I have N portions of bird feed, how many pigeons will be fed with at least one portion of wheat?
 
 ## Simple
 
-The simplest way to solve it is using step-by-step model and repeat all stages of feeding.
-Create minute counter and for each minute increasing we reduce wheat portions and add new pigeons.
-But we should be careful for the step when we have portions less than pigeons, because for this
-case we feed "old" pigeons first, even if they are fed already.
-In our solution "minute" is the same as a quantity of new arrived pigeons.
+The simplest way to solve this problem is by using a step-by-step model and repeat all stages of feeding.
+Create a minute counter and for each minute that goes by, we reduce the number of wheat portions and add new pigeons.
+We should pay attention during this step, because the first pigeon to arrive gets to eat first, even if they've already eaten.
+In our solution, a "minute" is the same as the quantity of newly arrived pigeons.
 
 ```
 def checkio(portions):
@@ -43,13 +39,12 @@ def checkio(portions):
 
 ## Sequence
 
-But if we will write solution results for several input values,
-then we can notice that these numbers create a sequence.
+If we write the solution results for several input values, then we can see that these numbers create a sequence.
 
 `1, 1, 2, 3, 3, 3, 3, 4, 5, 6, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10...`
 
-I hope you see a pattern. Now we need to write a generator for this and honestly
-we can receive all answer for 1 to N in one run.
+If you see the pattern, you're on the right track. Now, we need to write a generator, and honestly
+we can receive all answers from 1 to N in one run.
 
 ```
 def checkio(portions):
@@ -64,8 +59,8 @@ def checkio(portions):
 
 ## Math
 
-But this mission can be solved with pure mathematics (ok, almost pure) and O(1) complexity.
-And [@bunnychai](http://www.checkio.org/user/bunnychai/) proved this with
+This mission can be solved with pure mathematics. (well, almost pure) and O(1) complexity.
+[@bunnychai](http://www.checkio.org/user/bunnychai/) has proved this with the
 ["Arithmetic" solution][arithmetic]
 
 ```
@@ -78,8 +73,8 @@ def checkio(number):
     return t + max(number - s - t, 0)
 ```
 
-and an another variant by [@DiEvAl](http://www.checkio.org/user/DiEvAl/) in ["First" solution][dieval].
-Here you can find an explanation of the math.
+Here's an another variant by [@DiEvAl](http://www.checkio.org/user/DiEvAl/) with the ["First" solution][dieval].
+In it, you can find an explanation for the the math.
 
 ```
 def checkio(n):
@@ -95,16 +90,15 @@ def checkio(n):
 
 ## Creative
 
-And as usually "Creative" solutions as dessert.
-For example this [golf solution][golf] by [@melpon](http://www.checkio.org/user/melpon/)
+And as usual, I've cherry-picked some "Creative" solutions for dessert.
+For example, this [golf solution][golf] by [@melpon](http://www.checkio.org/user/melpon/)
 
 ```
 f=lambda n,y=0,i=0:n<y and max(n,y-i+1)or f(n-y,sum(range(i+1)),i+1)
 checkio=f
 ```
 
-And [@veky](http://www.checkio.org/user/veky/) with his ["Optimal" solution][optimal], where math twisted with binary search.
-You can find hints how it's work in comments or ask the author of this solution.
+And [@veky](http://www.checkio.org/user/veky/) has this ["Optimal" solution][optimal], where the math is twisted with a binary search. You can find hints on how it works in the comments, or even just ask him if you want to know more.
 
 ```
 def pbs(cond, start=0):
@@ -125,7 +119,7 @@ def checkio(n):
     return max(n - (k**3 - k)//6, (k**2 - k)//2)
 ```
 
-That's all folks. Be careful with Hungry Pigeons ;-)
+That's all folks. Be careful feeding the Hungry Pigeons ;-)
 
 _Valentin Bryukhanov aka Bryukh_
 
