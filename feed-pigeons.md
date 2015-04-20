@@ -1,3 +1,5 @@
+![Pigeons](http://checkio.s3.amazonaws.com/blog/share/hungry-pigeons.png)
+
 Hi, CiO Friends!
 
 On our landing page you can find one mission text with solutions.
