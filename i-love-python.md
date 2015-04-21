@@ -1,11 +1,11 @@
 Hi, CiO friends!
 
-On CheckiO we have various missions. Sometimes you need just solve input-output function.
-Sometimes it's codeGolf. Sometimes you will try play a game with score. 
-But couple missions are different. These are Creative or code essay missions.
-In this kind tasks you don't need to solve anything -- one test and any or a given answer.
-But you could write you thoughts about the given problem in code (or in code comments).
-And we will look at ["I Love Python" mission][] today.
+On CheckiO we have various missions. Sometimes you just need to solve input-output function.
+Sometimes it's codeGolf. Sometimes you will play a game with score. 
+But the couple of missions are different. These are Creative or as we call them "code essay" missions.
+In this kind of tasks you don't need to solve anything -- one test and any or a given answer.
+But you can write you thoughts about the given problem in code (or in code comments).
+And today we will look at ["I Love Python" mission][iluvpython].
 
 ## Description
 
@@ -13,16 +13,16 @@ This mission is simple to solve.
 You are given a function called "i_love_python" which will only return the phrase - "I love Python!".
 Let's write an essay in python code which will explain why you love python.
 
-For this mission players get points only for votes by another player for their solutions.
+For this mission players get points only when other players vote for their specific solution.
 
 ## Code essays
 
 The most number of solutions are written as comment novels or something brain twisted.
-I will try to choose some interesting essays, but sorry if I skipped someone who is interested too.
+I will try to choose the most interesting essays, but sorry if I skipped some other creative solutions.
 Feel free to put links or solutions in comments.
 
-And the first I should post ["Magnum opus" essay][veky_solution] 
-by our top level and one of the most famous Checkio player -- [@veky](http://www.checkio.org/user/veky/).
+First of all i think i should post ["Magnum opus" essay][veky_solution] 
+by our top level and one of the most famous CheckiO player -- [@veky](http://www.checkio.org/user/veky/).
 He is one of the smartest person who I know and this is not eyewash, I really think so.
 And this is the great solution because here function are weaved in the good essay. 
 
@@ -126,12 +126,12 @@ I will put some of them just with quotes.
 > ...I love Python because it's the best language
  I've tried for expressing exact mathematical thoughts without much bureaucracy.
 
-And that is short extract from many stories and code puzzles.
+And that is just small extract from many-many stories and code puzzles.
 I think you can find other interesting solutions and share them in comments here.
 
-That's all folks. Goodbye for the next friday.
+That's all folks. Goodbye, see you next friday.
 
-
+[iluvpython]: http://www.checkio.org/mission/i-love-python/share/43c946197f632388709d17d8b9714f72/
 [veky_solution]: http://www.checkio.org/mission/i-love-python/publications/veky/python-3/magnum-opus/share/47e1808a004aeec610a39acc01808e8a/
 [gyahun_dash_solution]: http://www.checkio.org/mission/i-love-python/publications/gyahun_dash/python-3/clearly/share/8479e92bf678d675a6925a13a423a33d/
 [ciel_solution]: http://www.checkio.org/mission/i-love-python/publications/ciel/python-3/brainfk/share/e192da78eb8590b7407ce06f121167ae/
