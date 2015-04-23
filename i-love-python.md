@@ -1,11 +1,11 @@
 Hi, CiO friends!
 
-On CheckiO we have various missions. Sometimes you just need to solve input-output function.
-Sometimes it's codeGolf. Sometimes you will play a game with score. 
-But the couple of missions are different. These are Creative or as we call them "code essay" missions.
-In this kind of tasks you don't need to solve anything -- one test and any or a given answer.
-But you can write you thoughts about the given problem in code (or in code comments).
-And today we will look at ["I Love Python" mission][iluvpython].
+On CheckiO we have all sorts of different and challenging missions. Sometimes you just need to solve input-output function.
+Sometimes it's a round of codeGolf. Sometimes you will play a game with a special score system. 
+But two of these missions are very different. These are more creative writing, or as we call them "code essay" missions.
+In this kind of task, you don't need to solve anything as there is only one test which will take any given answer.
+This is a mission for you to write you thoughts about the given problem in code (or in code comments).
+So, today we will look at the ["I Love Python" mission][iluvpython].
 
 ## Description
 
@@ -17,14 +17,13 @@ For this mission players get points only when other players vote for their speci
 
 ## Code essays
 
-The most number of solutions are written as comment novels or something brain twisted.
-I will try to choose the most interesting essays, but sorry if I skipped some other creative solutions.
-Feel free to put links or solutions in comments.
+Most solutions for this mission are written as commented novels or something brain twist-y.
+I'll try to find some of the more interesting essays. If I miss your favorite, feel free to put links to the solution in the comments.
 
-First of all i think i should post ["Magnum opus" essay][veky_solution] 
-by our top level and one of the most famous CheckiO player -- [@veky](http://www.checkio.org/user/veky/).
-He is one of the smartest person who I know and this is not eyewash, I really think so.
-And this is the great solution because here function are weaved in the good essay. 
+First of all, I'm comppelled to post the ["Magnum opus" essay][veky_solution] 
+by the top level and one of the most famous CheckiO players, [@veky](http://www.checkio.org/user/veky/).
+He is one of the smartest coders I know, hands down.
+This is the great solution because he's weaved the function into a rather good essay. 
 
 ```python
 (lambda _:globals().__setitem__(_.lower().translate(dict(enumerate(( '_'
@@ -45,15 +44,15 @@ While you are trying to "digest" this essay, and wondering if it is an
 essay at all, think: we must know, we will know. Good luck!"""[::73])
 ```
 
-Next is short and simple. but funny ["Clearly"][gyahun_dash_solution] by [@gyahun_dash](http://www.checkio.org/user/gyahun_dash/)
-True love does not need reasons and nothing impossible if no complaints.
+Next I have a short, simple and funny mission titled ["Clearly"][gyahun_dash_solution] by [@gyahun_dash](http://www.checkio.org/user/gyahun_dash/)
+True love does not need reason, and nothing is impossible if no one complains.
 
 ```
 def i_love_python(complaints='', impossibles={}, reasons=None, love=True):
     return 'I love Python!'
 ```
 
-[@ciel]() has written ["Brainf\*\*ck" solution][] and yes it's BF with classes.
+[@ciel]() has written the ["Brainf\*\*ck" solution][] and yes it's a BF with classes AND class.
 
 ```python
 class BF:
