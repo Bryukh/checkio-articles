@@ -1,7 +1,7 @@
 Hi, CiO friends!
 
 On CheckiO we have all sorts of different and challenging missions. Sometimes you just need to solve input-output function.
-Sometimes it's a round of codeGolf. Sometimes you will play a game with a special score system. 
+Sometimes it's a round of codeGolf. Sometimes you will play a game with a special score system.
 But two of these missions are very different. These are more creative writing, or as we call them "code essay" missions.
 In this kind of task, you don't need to solve anything as there is only one test which will take any given answer.
 This is a mission for you to write you thoughts about the given problem in code (or in code comments).
@@ -20,12 +20,12 @@ For this mission players get points only when other players vote for their speci
 Most solutions for this mission are written as commented novels or something brain twist-y.
 I'll try to find some of the more interesting essays. If I miss your favorite, feel free to put links to the solution in the comments.
 
-First of all, I'm comppelled to post the ["Magnum opus" essay][veky_solution] 
+First of all, I'm comppelled to post the ["Magnum opus" essay][veky_solution]
 by the top level and one of the most famous CheckiO players, [@veky](http://www.checkio.org/user/veky/).
 He is one of the smartest coders I know, hands down.
-This is the great solution because he's weaved the function into a rather good essay. 
+This is the great solution because he's weaved the function into a rather good essay.
 
-```python
+```
 (lambda _:globals().__setitem__(_.lower().translate(dict(enumerate(( '_'
 ,None),1<<5))),lambda:_))("""\
 In my wildest dreams, I never imagined I'd have to write _essays_ here
@@ -52,9 +52,9 @@ def i_love_python(complaints='', impossibles={}, reasons=None, love=True):
     return 'I love Python!'
 ```
 
-[@ciel]() has written the ["Brainf\*\*ck" solution][] and yes it's a BF with classes AND class.
+[@ciel](http://www.checkio.org/user/ciel/) has written the ["Brainf\*\*ck" solution][ciel_solution] and yes it's a BF with classes AND class.
 
-```python
+```
 class BF:
     buffer=[0]*9999
     ptr=0
@@ -86,7 +86,7 @@ i_love_python=lambda:BF().execute('++++++++[>>+>++>+++>++++>+++++>++++++>+++++++
 
 exPHP developer biography in [@profuel's](http://www.checkio.org/user/profuel/) ["First" solution][profuel_solution].
 
-```python
+```
 def i_love_python():
     programming_years = 0
     while programming_years < 5:
@@ -95,10 +95,8 @@ def i_love_python():
     if programming_years>=5:
         I_got_into_python_and_DJango_environment = True
         it_changed_my_programming_attitude_completely = True
-        
         if type("I get into strange PHP unlike situation"):
             I_feel_like_I_hate_python_and_getting_back_to_basic_documentation = True
-        
     return "I love Python!"
 ```
 
@@ -110,11 +108,11 @@ I will put some of them just with quotes.
 
 [@reviewboy](http://www.checkio.org/user/reviewboy/) with [the story][reviewboy_story] which begin by TRS-80.
 
-> Why do I love Python? It's restored my enthusiasm for coding.
+> Why do I love Python? It`s restored my enthusiasm for coding.
 
 [@Ch0bits](http://www.checkio.org/user/Ch0bits/) with ["Philosophic principles is main reason"][Ch0bits_story].
 
-> Although I don't use Python directly for my work. It's just a hobby.
+> Although I don`t use Python directly for my work. It's just a hobby.
 
 [@abe.dillon](http://www.checkio.org/user/abe.dillon/) with [readability essay][abe_dillon_story].
 
@@ -128,7 +126,7 @@ I will put some of them just with quotes.
 And that is just small extract from many-many stories and code puzzles.
 I think you can find other interesting solutions and share them in comments here.
 
-That's all folks. Goodbye, see you next friday.
+That`s all folks. Goodbye, see you next Friday.
 
 [iluvpython]: http://www.checkio.org/mission/i-love-python/share/43c946197f632388709d17d8b9714f72/
 [veky_solution]: http://www.checkio.org/mission/i-love-python/publications/veky/python-3/magnum-opus/share/47e1808a004aeec610a39acc01808e8a/
