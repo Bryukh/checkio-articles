@@ -62,7 +62,7 @@ def checkio(expression):
 ```
 
 As first here we "clear" a text and keep only brackets.
-So a string like "{[(3+1)+2]+}+()" became to "{[()]}()".
+So a string like "{[(3+1)+2]+}+()" become to "{[()]}()".
 Next we remove all pairs of brackets which are near each other like "()", "[]" or "{}".
 If for some step we don't remove anything and the string is not an empty, then
 the given text is wrong.
