@@ -104,7 +104,7 @@ def i_love_python():
 
 Many players wrote their thoughts as comment lines in code.
 Some stories are interesting and I think it will not take too many time to read them.
-I will put some of them just with quotes.
+I will put a few of them here with relevant quotes.
 
 [@reviewboy](http://www.checkio.org/user/reviewboy/) with [the story][reviewboy_story] which begin by TRS-80.
 
@@ -123,10 +123,14 @@ I will put some of them just with quotes.
 > ...I love Python because it's the best language
  I've tried for expressing exact mathematical thoughts without much bureaucracy.
 
-And that is just small extract from many-many stories and code puzzles.
-I think you can find other interesting solutions and share them in comments here.
+And that is just small sample from many-many stories and code puzzles.
+No doubt you can find other interesting solutions, so feel free to share them in comments here.
 
+<<<<<<< HEAD
 That`s all folks. Goodbye, see you next Friday.
+=======
+That's all folks. Goodbye, see you next Friday.
+>>>>>>> a723e47bb80042d298815f36efd083558e82f05a
 
 [iluvpython]: http://www.checkio.org/mission/i-love-python/share/43c946197f632388709d17d8b9714f72/
 [veky_solution]: http://www.checkio.org/mission/i-love-python/publications/veky/python-3/magnum-opus/share/47e1808a004aeec610a39acc01808e8a/
