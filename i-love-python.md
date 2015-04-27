@@ -126,11 +126,7 @@ I will put a few of them here with relevant quotes.
 And that is just small sample from many-many stories and code puzzles.
 No doubt you can find other interesting solutions, so feel free to share them in comments here.
 
-<<<<<<< HEAD
-That`s all folks. Goodbye, see you next Friday.
-=======
 That's all folks. Goodbye, see you next Friday.
->>>>>>> a723e47bb80042d298815f36efd083558e82f05a
 
 [iluvpython]: http://www.checkio.org/mission/i-love-python/share/43c946197f632388709d17d8b9714f72/
 [veky_solution]: http://www.checkio.org/mission/i-love-python/publications/veky/python-3/magnum-opus/share/47e1808a004aeec610a39acc01808e8a/
