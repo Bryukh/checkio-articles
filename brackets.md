@@ -1,9 +1,8 @@
-Hi!
+Welcome back for another weekly review series!
 
-When you open "Electronic Station" the first mission that meets you is
-["Brackets"][brackets]. This is a simple, but interesting and useful mission.
-"Brackets" can be solved by various methods and algorithms and CiO players shown
-many interesting solutions for that.
+When you open  first "Electronic Station" the first mission that you encounter is the classic
+["Brackets"][brackets] mission. This is a simple, but interesting and useful mission.
+"Brackets" can be solved with a wide variety of methods, and CiO players have certainly come up with some clever and ingenious solutions to it.
 
 ## Description
 
@@ -18,14 +17,14 @@ not based on the brackets. Do not worry about operators and operands.
 
 ## Stack Solution
 
-I've solved this mission with a [stack][wiki-stack].
+I've solved this mission myself, using a [stack][wiki-stack].
 Iterate a given text symbol by symbol.
-- if a character is not a bracket then skip it;
-- if a character is an opened bracket then put in the stack;
-- if a character is a closed bracket, then try to take the top element of the stack
+- If a character is not a bracket then skip it,
+- If a character is an opened bracket then put in the stack,
+- If a character is a closed bracket, then try to take the top element of the stack
 and check whether they form a pair of identical brackets: "()", "[]" or "{}".
 
-If we try to take an element from the stack and it's an empty or after checking
+If we try to take an element from the stack and it's empty, or after checking
 all symbols the stack is not an empty, then our expression is wrong.
 
 ```python
@@ -43,11 +42,11 @@ def checkio(data):
     return not bool(stack)
 ```
 
-You can examine this code execution with [Pythontutor service][pytutor]
+You can examine this code execution with the [Pythontutor service][pytutor]
 
 ## Stackless Solution
 
-This mission can be solved without stack and only with string methods as
+This mission can be solved without using stack and instead with a string method as seen
 in [@blabaster's](http://www.checkio.org/user/blabaster/)
 ["Stackless" solution][blabaster-solution]
 
@@ -61,14 +60,14 @@ def checkio(expression):
     return True
 ```
 
-As first here we "clear" a text and keep only brackets.
+As the first solution, we have to "clear" extra text and keep only the brackets.
 So a string like "{[(3+1)+2]+}+()" become to "{[()]}()".
-Next we remove all pairs of brackets which are near each other like "()", "[]" or "{}".
+Next we remove all pairs of brackets which are close to each other like "()", "[]" or "{}".
 If for some step we don't remove anything and the string is not an empty, then
 the given text is wrong.
-You can examine this code execution with [Pythontutor - "stackless"][pyt-stackless].
+You can examine this code with [Pythontutor - "stackless"][pyt-stackless].
 
-And short, less readable and recursive version of this algorithm in
+Here's a short, slightly less readable and recursive version of the algorithm in
 [@coells's](http://www.checkio.org/user/coells/) [solution][coells-first].
 
 ```python
@@ -80,12 +79,12 @@ checkio = lambda e, f = '': True if e == '' else False if e == f else checkio(EX
 
 ## "Now They Have Two Problems"
 
-By the way about regexp -- [@LuigiMoro](http://www.checkio.org/user/LuigiMoro/)
-written [almost regexp solution][LuigiMoro-regexp].
-He prepared three regexp expressions and if any of it's matching,
-then the function returns False.
-But before this checking we should check that quantity of opened brackets are equal
-to closed for each kind.
+How about regexp -- [@LuigiMoro](http://www.checkio.org/user/LuigiMoro/)
+wrote an [almost regexp solution][LuigiMoro-regexp].
+He prepared three regexp expressions and checks if any of it matches,
+then returns False if they do.
+But before this we check that the quantity of opened brackets are equal
+to the closed for each type.
 
 ```python
 import re
@@ -105,9 +104,9 @@ def checkio(expression):​
 
 ## Fython
 
-I'm not sure why did [@astynax84](http://www.checkio.org/user/astynax84/)
+I'm not sure why [@astynax84](http://www.checkio.org/user/astynax84/)
 placed "Fython" in [technically oneliner solution][astyx-fython].
-Yes, this is a oneliner, but it's reintended for "readability".
+Yes, this is a oneliner, but it's been indented for "readability".
 
 ```python
 checkio = lambda s: reduce(lambda (f, stk), x:
@@ -123,7 +122,7 @@ checkio = lambda s: reduce(lambda (f, stk), x:
     )), s, (True, None)) == (True, None)
 ```
 
-And at this mind twisted solution I say goodbye -- That's all folks about brackets.
+And with this mind twisted solution I say goodbye for now -- That's all I've got on brackets. If you need any more, go to the hardware store.
 
 [brackets]: http://www.checkio.org/mission/brackets/share/440e9f6d6367b188e86fdf5797f7b087/
 [wiki-stack]: http://en.wikipedia.org/wiki/Stack_(abstract_data_type)
