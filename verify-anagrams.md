@@ -94,4 +94,6 @@ verify_anagrams=lambda f,s,p=lambda x: "".join(sorted(x.lower())).strip():p(f)==
 
 That's all anagrams. If you have more interesting ways to solve this mission feel free to write it in comments.
 
+_Valentin Bryukhanov aka Bryukh_
+
 [mission]: http://www.checkio.org/mission/verify-anagrams/share/80a6c1510bf892c6b3789caa9e4f3805/

@@ -100,4 +100,6 @@ verify_anagrams=lambda f,s,p=lambda x: "".join(sorted(x.lower())).strip():p(f)==
 Вот такая вот история об анаграммах. Если вы хотите рассказать о других методах решения данной задачи,
 то пишите и делитесь своими мыслями в комментариях.
 
+_Валентин Брюханов aka Bryukh_
+
 [mission]: http://www.checkio.org/mission/verify-anagrams/share/80a6c1510bf892c6b3789caa9e4f3805/
