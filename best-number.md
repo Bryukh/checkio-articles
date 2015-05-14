@@ -1,22 +1,22 @@
 Hi, CiO friends!
 
-Early I told about a creative writing mission ["I love Python"][article-link].
-And today I will look at the second this kind mission -- ["The best number ever"][mission-link].
+In an earlier article, I talked about the creative writing mission ["I love Python"][article-link].
+Today I will be looking into another creative writing mission: ["The best number ever"][mission-link].
 
-The mission is simple. Write a function that return any number. But try to describe why is
-your number the best. For example, Shaldon Cooper thinks that 73 is the best number ever and
-he can explain it.
+The mission is simple. Write a function that returns any number. But try to describe why 
+your number is the best. For example, Sheldon Cooper from The Big Bang Theory thinks that 73 is the best number ever and
+he can explain why.
 
-Let's look that CheckiO players would say about their best numbers.
+Let's look at what CheckiO players say about their favorite numbers.
 
-And [@Amachua](http://www.checkio.org/user/Amachua/) opens our chart with his
-["Dictionary"](http://www.checkio.org/mission/the-best-number-ever/publications/Amachua/python-3/second/share/2f3a43ae082fca8058a5f5ac64c32f04/).
-He collected an interesting set of names and peoples. But this solution is still too far
-to completion, so propose your ideas to the author in comments and maybe later we will see
-"The Full Dictionary of the best numbers" [@Amachua](http://www.checkio.org/user/Amachua/).
+And [@Amachua](http://www.checkio.org/user/Amachua/) opens our article this week with his
+["Dictionary"](http://www.checkio.org/mission/the-best-number-ever/publications/Amachua/python-3/second/share/2f3a43ae082fca8058a5f5ac64c32f04/) solution.
+He collected an interesting set of names and people, but this solution is still far
+from completion. So propose your new ideas to the author in the comments and maybe later we will see
+"The complete Dictionary of the best numbers" by [@Amachua](http://www.checkio.org/user/Amachua/).
 
-The next [@Faibbus](http://www.checkio.org/user/Faibbus/) will introduce
-for us [The Most Amazing, Ancient, and Singular Number **Wau**](http://www.checkio.org/mission/the-best-number-ever/publications/Faibbus/python-27/first-wau/share/4090c596b29e005051ef955117e868e2/).
+The next solution, written by [@Faibbus](http://www.checkio.org/user/Faibbus/), will introduce
+us to [The Most Amazing, Ancient, and Singular Number **Wau**](http://www.checkio.org/mission/the-best-number-ever/publications/Faibbus/python-27/first-wau/share/4090c596b29e005051ef955117e868e2/).
 
 ```
 def checkio( *data):
@@ -51,8 +51,8 @@ def checkio( *data):
     return int(Wau)
 ```
 
-[@grigoriytretyakov](http://www.checkio.org/user/grigoriytretyakov/) written
-an essay with variable names to prove about ["16 is the best number ever"](http://www.checkio.org/mission/the-best-number-ever/publications/grigoriytretyakov/python-3/first-on-the-best-number-ever/share/ae88f82a0d8d286394d2cf4372af524d/).
+[@grigoriytretyakov](http://www.checkio.org/user/grigoriytretyakov/)'s written
+an essay with variable names to prove ["16 is the best number ever"](http://www.checkio.org/mission/the-best-number-ever/publications/grigoriytretyakov/python-3/first-on-the-best-number-ever/share/ae88f82a0d8d286394d2cf4372af524d/).
 
 ```
 def checkio():
@@ -75,8 +75,8 @@ def checkio():
         return i
 ```
 
-If you would like to read a tale for your kids, then you can take [@Juge_Ti's](http://www.checkio.org/user/Juge_Ti/) ["Secret Magic Number" short novel](http://www.checkio.org/mission/the-best-number-ever/publications/Juge_Ti/python-3/secret-magic-number/share/094f44e1f59cd2188ecaa1539f9974ca/). I don't want to spoiler, so you need to run this
-if you need to know the secret number.
+If you're looking for a nice story to read to the kids, then you can take on [@Juge_Ti's](http://www.checkio.org/user/Juge_Ti/) ["Secret Magic Number" short novel](http://www.checkio.org/mission/the-best-number-ever/publications/Juge_Ti/python-3/secret-magic-number/share/094f44e1f59cd2188ecaa1539f9974ca/). I don't want to spoil it for you, so you'll need to run the code
+if you want to know the secret number.
 
 [@HonzaKral](http://www.checkio.org/user/HonzaKral/) proved Sheldon's version ["Inspired by BrainF**k"](http://www.checkio.org/mission/the-best-number-ever/publications/HonzaKral/python-3/inspired-by-brainfk/share/5b57ad0090c74d6dca5a3ca6b998d17f/)
 
@@ -98,11 +98,11 @@ def checkio():
     return bf("0+++++++<+++")
 ```
 
-And for dessert funny solution from [@StefanPochmann]http://www.checkio.org/user/StefanPochmann/)
+And for dessert, this funny solution comes from [@StefanPochmann]http://www.checkio.org/user/StefanPochmann/)
 ["I'm sure you'll agree"](http://www.checkio.org/mission/the-best-number-ever/publications/StefanPochmann/python-3/im-sure-youll-agree/share/9d766dd139071ba8d493f54de6200fc7/).
 
 ```
 checkio=lambda:int('https://www.youtube.com/watch?v=dQw4w9WgXcQ'.split('=')[1], 36)
 ```
 
-That's all folks. Tell us about your best numbers.
+That's all folks. Tell us about your best numbers in the comments.
