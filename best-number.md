@@ -1,9 +1,9 @@
 Hi, CiO friends!
 
-In an earlier article, I talked about the creative writing mission ["I love Python"][article-link].
-Today I will be looking into another creative writing mission: ["The best number ever"][mission-link].
+In an earlier article, I talked about the creative writing mission ["I love Python"](http://www.checkio.org/blog/i-love-python-overview/).
+Today I will be looking into another creative writing mission: ["The best number ever"](http://www.checkio.org/mission/the-best-number-ever/share/c1ce1bb929276039fdb46ca495cd2056/).
 
-The mission is simple. Write a function that returns any number. But try to describe why 
+The mission is simple. Write a function that returns any number. But try to describe why
 your number is the best. For example, Sheldon Cooper from The Big Bang Theory thinks that 73 is the best number ever and
 he can explain why.
 
@@ -98,7 +98,7 @@ def checkio():
     return bf("0+++++++<+++")
 ```
 
-And for dessert, this funny solution comes from [@StefanPochmann]http://www.checkio.org/user/StefanPochmann/)
+And for dessert, this funny solution comes from [@StefanPochmann](http://www.checkio.org/user/StefanPochmann/)
 ["I'm sure you'll agree"](http://www.checkio.org/mission/the-best-number-ever/publications/StefanPochmann/python-3/im-sure-youll-agree/share/9d766dd139071ba8d493f54de6200fc7/).
 
 ```
